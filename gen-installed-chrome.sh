@@ -9,6 +9,7 @@ find_dir() {
 	while read DIR; do
 		for D in $(find -type d -name $DIR); do
 			echo "$TYPE,install,url,jar:resource:/chrome/$JAR!${D#.}/"
+			echo "$TYPE,install,url,jar:resource:/chrome/$JAR!$(dirname ${D#.})/" | sed 's@///*@/@g'
 		done
 	done
 }
