@@ -17,7 +17,7 @@ find_dir() {
 while [ -n "$1" ]; do
 	DIR=$(mktemp -d unzip.XXXXXX)
 	cd $DIR
-	unzip ../$1 >/dev/null
+	unzip ../$1 >/dev/null || exit 2
 	JAR=$(basename $1)
 	
 	find -name contents.rdf \
