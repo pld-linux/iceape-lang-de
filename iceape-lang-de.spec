@@ -4,14 +4,14 @@
 Summary:	German resources for Iceape
 Summary(pl.UTF-8):	Niemieckie pliki językowe dla Iceape
 Name:		iceape-lang-%{_lang}
-Version:	1.1.17
+Version:	1.1.18
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/%{version}/contrib-localized/seamonkey-%{version}.%{_lare}.langpack.xpi
-# Source0-md5:	603d6f408ff287be0d781f53d71cfae4
-Source1:	http://www.mozilla-enigmail.org/download/release/0.95/enigmail-de-0.95.xpi
-# Source1-md5:	7b363f97e6873f44c835735a7b02620f
+# Source0-md5:	3a763b97d78f6720948a30a859b7b99b
+Source1:	http://www.mozilla-enigmail.org/download/release/0.96/enigmail-de-0.96.xpi
+# Source1-md5:	841c0463d9641f85a951f2516fedd1de
 Source2:	gen-installed-chrome.sh
 URL:		http://www.seamonkey-project.org/
 BuildRequires:	unzip
