@@ -14,7 +14,10 @@ Source1:	http://www.mozilla-enigmail.org/download/release/0.96/enigmail-de-0.96.
 # Source1-md5:	841c0463d9641f85a951f2516fedd1de
 Source2:	gen-installed-chrome.sh
 URL:		http://www.seamonkey-project.org/
+BuildRequires:	perl-base
+BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
+BuildRequires:	zip
 Requires(post,postun):	iceape >= %{version}
 Requires(post,postun):	textutils
 Requires:	iceape >= %{version}
